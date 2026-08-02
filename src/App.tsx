@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Nav } from '@/components/Nav'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { Home } from '@/pages/Home'
+import { Lab } from '@/pages/Lab'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/lab" element={<Lab />} />
         </Routes>
       </div>
     </BrowserRouter>
