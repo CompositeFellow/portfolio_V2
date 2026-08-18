@@ -37,20 +37,18 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-28 px-6 bg-[#0F1318] scroll-mt-24">
-      <div className="max-w-6xl mx-auto">
-        <SectionLabel n="02" label="Skills" />
-        <h2 className="font-mono text-3xl font-bold text-white mt-5 mb-14">Technical Stack</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {cats.map(cat => (
-            <div key={cat.label} className="border border-[#38BDF8]/10 bg-[#1A1F26]/50 p-6 hover:border-[#38BDF8]/22 transition-colors">
-              <div className={`font-mono text-[10px] tracking-widest uppercase mb-5 ${cat.accent}`}>{cat.label}</div>
-              <div className="flex flex-wrap gap-2">
-                {cat.skills.map(s => <Chip key={s.n} label={s.n} color={s.c} />)}
-              </div>
+    <section id="skills" className="pb-28 bg-[#0F1318] scroll-mt-24">
+      <SectionLabel n="02" label="Skills" />
+      <h2 className="font-mono text-3xl font-bold text-white mt-5 mb-14">Technical Stack</h2>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {cats.map(cat => (
+          <div key={cat.label} className="border border-[#38BDF8]/10 bg-[#1A1F26]/50 p-6 hover:border-[#38BDF8]/22 transition-colors">
+            <div className={`font-mono text-[10px] tracking-widest uppercase mb-5 ${cat.accent}`}>{cat.label}</div>
+            <div className="flex flex-wrap gap-2">
+              {cat.skills.map(s => <Chip key={s.n} label={s.n} color={s.c} />)}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   )

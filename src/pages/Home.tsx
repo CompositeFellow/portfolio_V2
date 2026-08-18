@@ -5,7 +5,7 @@ import { Featured } from '@/components/sections/Featured'
 import { Certifications } from '@/components/sections/Certifications'
 import { CareerGoals } from '@/components/sections/CareerGoals'
 import { Contact } from '@/components/sections/Contact'
-import { SubNav } from '@/components/SubNav'
+import { useSubNav } from '@/components/layout/SubNavContext'
 
 const sections = [
   { id: 'about', label: 'About' },
@@ -17,10 +17,11 @@ const sections = [
 ]
 
 export function Home() {
+  useSubNav(sections)
+
   return (
     <>
       <Hero />
-      <SubNav items={sections} />
       <About />
       <Skills />
       <Featured />

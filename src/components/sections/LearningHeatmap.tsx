@@ -37,7 +37,7 @@ export function LearningHeatmap() {
   }
 
   return (
-    <section id="lab" className="pt-14 pb-28 px-6 max-w-6xl mx-auto">
+    <section id="lab" className="pb-28">
       <SectionLabel n="01" label="Learning Lab" />
       <h2 className="font-mono text-3xl font-bold text-white mt-5 mb-2">What I'm Learning</h2>
       <p className="text-slate-600 font-mono text-sm mb-10">

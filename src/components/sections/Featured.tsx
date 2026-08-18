@@ -12,7 +12,7 @@ export function Featured() {
   }, [])
 
   return (
-    <section id="featured" className="py-28 px-6 max-w-6xl mx-auto scroll-mt-24">
+    <section id="featured" className="pb-28 scroll-mt-24">
       <SectionLabel n="03" label="Featured" />
       <div className="flex items-end justify-between gap-4 mt-5 mb-14">
         <h2 className="font-mono text-3xl font-bold text-white">Featured Work</h2>

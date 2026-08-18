@@ -19,7 +19,7 @@ export function Blog() {
   ]
 
   return (
-    <section id="blog" className="py-28 px-6 max-w-6xl mx-auto">
+    <section id="blog" className="pb-28">
       <SectionLabel n="07" label="Learning Notes" />
       <h2 className="font-mono text-3xl font-bold text-white mt-5 mb-2">Writing</h2>
       <p className="text-slate-600 font-mono text-sm mb-14">Short notes on what I'm learning. No fluff.</p>

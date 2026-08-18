@@ -12,7 +12,7 @@ export function About() {
   const studying = ['PLC Programming', 'Ignition SCADA', 'Industrial Networking', 'Ethernet/IP', 'Modbus TCP/RTU', 'Python Automation', 'Studio 5000', 'HMI Design']
 
   return (
-    <section id="about" className="py-28 px-6 max-w-6xl mx-auto scroll-mt-24">
+    <section id="about" className="pb-28 scroll-mt-24">
       <SectionLabel n="01" label="About" />
 
       <div className="grid md:grid-cols-2 gap-16 mt-14">

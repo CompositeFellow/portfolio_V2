@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
+import type { SubNavItem } from './SubNavContext'
 
-export function SubNav({ items }: { items: { id: string; label: string }[] }) {
+export function SubNav({ items }: { items: SubNavItem[] }) {
   const [active, setActive] = useState(items[0]?.id ?? '')
   const visible = useRef(new Set<string>())
 

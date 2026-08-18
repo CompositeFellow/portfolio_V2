@@ -2,7 +2,7 @@ import { SectionLabel } from '@/components/ui/SectionLabel'
 
 export function Contact() {
   return (
-    <section id="contact" className="py-36 px-6 max-w-6xl mx-auto text-center scroll-mt-24">
+    <section id="contact" className="pb-36 text-center scroll-mt-24">
       <SectionLabel n="09" label="Contact" />
       <h2 className="font-mono text-4xl md:text-5xl font-bold text-white mt-10 mb-5 leading-tight">
         Let's Build<br />

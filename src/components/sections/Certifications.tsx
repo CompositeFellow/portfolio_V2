@@ -11,7 +11,7 @@ export function Certifications() {
   ]
 
   return (
-    <section id="certs" className="py-28 px-6 max-w-6xl mx-auto scroll-mt-24">
+    <section id="certs" className="pb-28 scroll-mt-24">
       <SectionLabel n="05" label="Certifications" />
       <h2 className="font-mono text-3xl font-bold text-white mt-5 mb-14">Credentials</h2>
       <div className="space-y-3">

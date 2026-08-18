@@ -10,10 +10,10 @@ export function Hero() {
   ]
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center text-center">
       <LadderBackground />
 
-      <div className="relative z-10 max-w-3xl mt-14 animate-fade-up">
+      <div className="relative z-10 max-w-3xl animate-fade-up">
         <div className="font-mono text-[10px] text-[#38BDF8]/45 tracking-[0.35em] uppercase mb-8">
           Portfolio v2.0 // Industrial Automation
         </div>

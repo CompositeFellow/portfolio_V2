@@ -8,7 +8,7 @@ const pages = [
   { to: '/blog', label: 'Blog' },
 ]
 
-export function Nav() {
+export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50)

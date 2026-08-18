@@ -1,20 +1,23 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Nav } from '@/components/Nav'
+import { Layout } from '@/components/layout/Layout'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { Home } from '@/pages/Home'
 import { Lab } from '@/pages/Lab'
+import { Projects } from '@/pages/Projects'
+import { Blog } from '@/pages/Blog'
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="bg-[#111418] text-[#E2E8F0] min-h-screen font-sans">
-        <ScrollToTop />
-        <Nav />
-        <Routes>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/lab" element={<Lab />} />
-        </Routes>
-      </div>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }
